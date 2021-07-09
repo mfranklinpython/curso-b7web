@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Página de teste!</title>
+    <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body>
+    <h1 id="titulo">Título da história</h1>
+
+    <p class="texto"><em>Era uma vez...</em> <sup>Um</sup> <strong>texto</strong> <sub>que</sub> serve como exemplo para formatação
+        de paragrafos em <del>HTML</del>. <br>
+        <small>Esse é para mostra pequeno!</small>
+    </p> 
+
+    <div class="exemplo">Texto de exemplo!</div>
+
+    <a href="https://www.google.com.br">Clique para acessar o google!</a><br/>
+    <a href="login.html" target="_blank">fazer login</a><br/>
+
+    <img src="https://www.google.com.br/google.jpg" width="480px" alt="Logo antiga do google!"><br/><br><br>
+    <form action="paginas/login.html" method="GET">
+    
+        <label>
+            Nome completo:<br>
+            <input type="text" name="nome">
+        </label>
+
+        <label >
+            Descrição:<br>
+            <textarea name="descricao" ></textarea>
+        </label>
+
+        <label>
+            Categoria:<br>
+            <select name="categoria1">
+                <option value="1">Categoria 1</option>
+                <option value="2">Categoria 2</option>
+                <option value="3">Categoria 3</option>
+                <option value="4">Categoria 4</option>
+                <option value="5">Categoria 5</option>
+            </select>
+        </label>
+
+        <label>
+            <input type="checkbox"/>
+            Eu declado que li essa miséria e aceito os termos 
+            <a href="paginas/termos.html" target="_blank" class="termoslink">termos de uso.</a>
+        </label><br><br>
+    
+    </form>
+    <form method="POST" action="caiunobait.php" enctype="multipart/form-data">
+        <input type="hidden" name="country" value="BR">
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label>
+                Primeiro nome: <br>
+                <input type="text" name="name" required minlength="2" maxlength="15">
+            </label>
+            <label>
+                Sobrenome: <br>
+                <input type="text" name="lastname">
+            </label>
+            <label>
+                Foto: <br>
+                <input type="file" name="photo" accept="image/*">
+            </label>
+            <label>
+                E-mail: <br>
+                <input type="text" name="email" pattern="(^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$)" title="Endereço de e-mail">
+            </label>
+            <label>
+                Idade: <br>
+                <input type="number" name="age" required min="18" max="99">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados da Profissionais</legend>
+            <label>
+                Nome da empresa: <br>
+                <input type="text" name="companyname">
+            </label>
+            <label>
+                Cargo na empresa: <br>
+                <input type="text" name="companyjobtitle">
+            </label>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar">
+
+    </form><br><br>
+
+
+    <button>Clique aqui pra nada!</button>
+    <br/><br/>
+    <h2>Lista de bolo!</h2>
+    <ol> <!-- ul cria uma lista desordenada e ol cria uma enumerada!-->
+        <li class="texto">farinha de trigo</li>
+        <li>ovo</li>
+        <li class="texto">Açucar</li>
+        <li>Leite</li>
+        
+
+    </ol>
+
+</body>
+
+</html>
