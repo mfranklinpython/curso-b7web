@@ -76,3 +76,18 @@ legend {
     color: rgb(255, 255, 255);
     padding: 5px;
 }
+.azul {
+    background-color: #00f;
+    font: #fff;
+}
+.vermelho {
+    background-color: #f00;
+    font: #fff;
+}
+.verde {
+    background-color: #0f0;
+    color: #000;
+}
+#numtelefone {
+    display: none;
+}
